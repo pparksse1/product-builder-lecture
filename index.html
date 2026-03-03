@@ -1,72 +1,120 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lotto Number Generator</title>
+    <title>Lotto & AI Animal Face - All-in-One Fun Site</title>
+    <meta name="description" content="Generate lucky lotto numbers and test if you're a dog or cat with our AI face test. Professional tools for your daily fun.">
     <meta name="google-adsense-account" content="ca-pub-2735444365542103">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2735444365542103"
-     crossorigin="anonymous"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2735444365542103" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <button id="theme-toggle">Dark Mode</button>
-        <h1>Lotto Number Generator</h1>
-        <button id="generator-btn">Generate Numbers</button>
-        <div id="numbers-display"></div>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">LuckyTool</div>
+            <ul class="nav-links">
+                <li><a href="#lotto-section">Lotto</a></li>
+                <li><a href="#ai-section">Animal Test</a></li>
+                <li><a href="#contact-section">Contact</a></li>
+            </ul>
+            <button id="theme-toggle">Dark Mode</button>
+        </nav>
+    </header>
 
-        <div class="divider"></div>
-
-        <section class="ai-section">
-            <h3>Animal Face Test</h3>
-            <p>Check if you're a Dog or a Cat!</p>
-            <button type="button" id="start-ai-btn" class="submit-btn">Start Test</button>
-            <div id="webcam-container"></div>
-            <div id="label-container"></div>
+    <main class="container">
+        <section id="lotto-section" class="content-card">
+            <h1>Lotto Number Generator</h1>
+            <p class="section-desc">Get your lucky numbers for this week's draw! Our generator uses a true random algorithm to ensure fairness.</p>
+            <button id="generator-btn">Generate Lucky Numbers</button>
+            <div id="numbers-display"></div>
+            
+            <div class="info-box">
+                <h4>How it works</h4>
+                <p>We pick 6 unique numbers from 1 to 45. While lotto is a game of chance, many users enjoy generating fresh numbers to break their patterns.</p>
+            </div>
         </section>
 
         <div class="divider"></div>
 
-        <section class="contact-section">
-            <h3>Partnership Inquiry</h3>
-            <form action="https://formspree.io/f/mlgwyzab" method="POST">
+        <section id="ai-section" class="content-card">
+            <h2>AI Animal Face Test</h2>
+            <p class="section-desc">Curious if you look more like a dog or a cat? Our AI model, trained on thousands of animal images, analyzes your facial features in real-time.</p>
+            <button type="button" id="start-ai-btn" class="submit-btn">Start AI Analysis</button>
+            <div id="webcam-container"></div>
+            <div id="label-container"></div>
+            
+            <div class="info-box">
+                <h4>About the AI</h4>
+                <p>This test uses Google's Teachable Machine technology. Your image is processed locally in your browser and is never uploaded to any server, ensuring your privacy.</p>
+            </div>
+        </section>
+
+        <div class="divider"></div>
+
+        <section id="contact-section" class="content-card">
+            <h3>Partnership & Feedback</h3>
+            <p>We value your feedback. For business inquiries or feature requests, please use the form below.</p>
+            <form action="https://formspree.io/f/mlgwyzab" method="POST" class="contact-form">
                 <div class="form-group">
-                    <input type="email" name="email" placeholder="Your Email" required>
+                    <input type="email" name="email" placeholder="Your Email Address" required>
                 </div>
                 <div class="form-group">
-                    <textarea name="message" placeholder="Your Message" required></textarea>
+                    <textarea name="message" placeholder="How can we help you?" required></textarea>
                 </div>
-                <button type="submit" class="submit-btn">Send Inquiry</button>
+                <button type="submit" class="submit-btn">Send Message</button>
             </form>
         </section>
 
         <div class="divider"></div>
 
-        <section class="comments-section">
+        <section class="comments-section content-card">
+            <h3>Community Comments</h3>
             <div id="disqus_thread"></div>
-            <script>
-                /**
-                *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-                *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
-                /*
-                var disqus_config = function () {
-                this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-                this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-                };
-                */
-                (function() { // DON'T EDIT BELOW THIS LINE
-                var d = document, s = d.createElement('script');
-                s.src = 'https://productbuiler.disqus.com/embed.js';
-                s.setAttribute('data-timestamp', +new Date());
-                (d.head || d.body).appendChild(s);
-                })();
-            </script>
-            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
         </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 LuckyTool. All rights reserved.</p>
+            <ul class="footer-links">
+                <li><a href="#" id="privacy-link">Privacy Policy</a></li>
+                <li><a href="https://github.com/pparksse1/product-builder-lecture">GitHub</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- Privacy Policy Modal -->
+    <div id="privacy-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Privacy Policy</h2>
+            <p>This site uses Google AdSense to serve ads. Google uses cookies to serve ads based on a user's prior visits to your website or other websites.</p>
+            <p><strong>Information Collection:</strong> We do not collect personal data directly. The AI Animal Face test processes images locally in your browser.</p>
+            <p><strong>Cookies:</strong> Google's use of advertising cookies enables it and its partners to serve ads to your users based on their visit to your sites and/or other sites on the Internet.</p>
+            <p>Users may opt out of personalized advertising by visiting <a href="https://www.google.com/settings/ads" target="_blank">Ads Settings</a>.</p>
+        </div>
     </div>
+
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
     <script src="main.js"></script>
+    <script>
+        // Disqus Integration
+        (function() {
+            var d = document, s = d.createElement('script');
+            s.src = 'https://productbuiler.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+
+        // Privacy Modal Logic
+        const modal = document.getElementById("privacy-modal");
+        const btn = document.getElementById("privacy-link");
+        const span = document.getElementsByClassName("close-btn")[0];
+        btn.onclick = (e) => { e.preventDefault(); modal.style.display = "block"; }
+        span.onclick = () => { modal.style.display = "none"; }
+        window.onclick = (event) => { if (event.target == modal) { modal.style.display = "none"; } }
+    </script>
 </body>
 </html>
