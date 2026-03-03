@@ -8,7 +8,7 @@
     --shadow-color: rgba(0,0,0,0.1);
 }
 
-[data-theme="dark"] {
+:root[data-theme="dark"] {
     --bg-color: #1a1a1a;
     --container-bg: #2d2d2d;
     --text-color: #f0f2f5;
@@ -38,6 +38,7 @@ body {
     box-shadow: 0 4px 8px var(--shadow-color);
     transition: background-color 0.3s, box-shadow 0.3s;
     position: relative;
+    min-width: 300px;
 }
 
 #theme-toggle {
@@ -70,6 +71,7 @@ body {
     display: flex;
     justify-content: center;
     gap: 10px;
+    flex-wrap: wrap;
 }
 
 .number-circle {
