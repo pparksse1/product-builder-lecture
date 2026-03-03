@@ -90,10 +90,33 @@ body {
     margin: 40px 0 30px;
 }
 
-.contact-section h3 {
-    margin-bottom: 20px;
-    font-size: 1.2em;
+.ai-section h3 {
+    margin-bottom: 10px;
 }
+
+.ai-section p {
+    margin-bottom: 20px;
+    opacity: 0.8;
+}
+
+#webcam-container {
+    margin: 20px auto;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+    background-color: var(--circle-bg);
+}
+
+#label-container {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+#label-container div {
+    margin-bottom: 5px;
+}
+
 
 .form-group {
     margin-bottom: 15px;

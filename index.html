@@ -15,6 +15,16 @@
 
         <div class="divider"></div>
 
+        <section class="ai-section">
+            <h3>Animal Face Test</h3>
+            <p>Check if you're a Dog or a Cat!</p>
+            <button type="button" id="start-ai-btn" class="submit-btn">Start Test</button>
+            <div id="webcam-container"></div>
+            <div id="label-container"></div>
+        </section>
+
+        <div class="divider"></div>
+
         <section class="contact-section">
             <h3>Partnership Inquiry</h3>
             <form action="https://formspree.io/f/mlgwyzab" method="POST">
@@ -52,6 +62,8 @@
             <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
         </section>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
     <script src="main.js"></script>
 </body>
 </html>
